@@ -1,0 +1,121 @@
+:root {
+  color-scheme: dark;
+  --ink: #f3ecdf;
+  --muted: #b7ab9a;
+  --line: rgba(243, 236, 223, 0.16);
+  --brass: #d7b56a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(215, 181, 106, 0.16), transparent 42%),
+    #090a0c;
+  font-family: Outfit, sans-serif;
+  font-weight: 340;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 7vh 1.5rem 4rem;
+}
+
+.mark {
+  width: min(220px, 58vw);
+  height: auto;
+  margin-bottom: 1.6rem;
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.45));
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--brass);
+}
+
+h1 {
+  margin: 0.35rem 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: clamp(4.4rem, 12vw, 8.4rem);
+  line-height: 0.86;
+  letter-spacing: -0.03em;
+}
+
+.lede {
+  max-width: 28rem;
+  margin: 1.2rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.enter {
+  margin-top: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12.5rem;
+  padding: 0.85rem 1.4rem;
+  border: 1px solid var(--brass);
+  border-radius: 999px;
+  color: #1a140c;
+  background: var(--brass);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.enter:hover {
+  background: #f0d48a;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem 1.4rem;
+  margin: 2.4rem 0 0;
+  padding: 1.1rem 0 0;
+  border-top: 1px solid var(--line);
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0 1rem 1.4rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+footer img {
+  width: 28px;
+  height: 28px;
+}
